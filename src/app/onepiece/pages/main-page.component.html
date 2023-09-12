@@ -1,0 +1,23 @@
+<h1>One Piece Personajes</h1>
+() para escuhar eventos
+<br>
+[]
+<br>
+<div class="row">
+
+  <div class="col">
+    <onepiece-list
+        [charactersList]="characters"
+        (onDelete)="onDeleteCharacter($event)"  ></onepiece-list>
+
+  </div>
+
+  <div class="col">
+
+    <onepiece-add-character (onNewCharacter)="onNewCharacter($event)" >
+    </onepiece-add-character>
+
+  </div>
+</div>
+
+
